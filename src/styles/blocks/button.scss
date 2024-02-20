@@ -30,28 +30,24 @@
     background-position: 50%;
     background-repeat: no-repeat;
 
-    &:first-of-type {
-      right: 67px;
-    }
+    // &:first-of-type {
+    //   right: 67px;
+    // }
 
-    &:last-of-type {
-      background-image: url(../images/icons/icon-arrow-white.svg);
-    }
+    // @include onTablet {
+    //   right: 67px;
 
-    @include onTablet {
-      right: 67px;
+    //   &:nth-of-type(2) {
+    //     right: 66px;
+    //   }
+    // }
 
-      &:nth-of-type(2) {
-        right: 66px;
-      }
-    }
+    // @include onDesktop {
+    //   right: 66px;
 
-    @include onDesktop {
-      right: 66px;
-      
-      &:first-of-type {
-        right: 75px;
-      }
-    }
+    //   &:first-of-type {
+    //     right: 75px;
+    //   }
+    // }
   }
 }
