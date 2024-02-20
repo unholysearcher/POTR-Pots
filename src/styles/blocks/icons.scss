@@ -1,0 +1,59 @@
+.icon {
+  display: block;
+  cursor: pointer;
+  background-size: cover;
+  transition: all 0.3s;
+  background-repeat: no-repeat;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &__menu {
+    width: 32px;
+    height: 32px;
+    background-image: url(../images/icons/icon-burger-menu.svg);
+
+    @include onDesktop {
+      display: none;
+    }
+  }
+
+  &__close {
+    width: 12px;
+    height: 12px;
+    background-image: url(../images/icons/icon-close.svg);
+  }
+
+  &__basket {
+    width: 48px;
+    height: 48px;
+    background-image: url(../images/icons/icon-basket.svg);
+
+    &:hover {
+      transform: scale(1.5);
+    }
+  }
+
+  &__socials {
+    width: 20px;
+    height: 20px;
+
+    &--twitter {
+      background-image: url(../images/icons/icon-twitter.svg);
+    }
+
+    &--insta {
+      background-image: url(../images/icons/icon-instagram.svg);
+    }
+
+    &--facebook {
+      background-image: url(../images/icons/icon-facebook.svg);
+    }
+
+    @include onDesktop {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}

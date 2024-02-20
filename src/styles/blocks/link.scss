@@ -1,0 +1,47 @@
+.link {
+  display: block;
+  text-decoration: none;
+  font-family: Manrope, sans-serif;
+  transition: all 0.3s;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &__more {
+    position: relative;
+    height: 132px;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    color: $turquoise;
+    font-size: 12px;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      color: $turquoise;
+      background-image: url(../images/icons/icon-arrow-side.svg);
+      top: 141px;
+      right: 5px; /* 18px should to be */
+      width: 8px;
+      height: 44px;
+    }
+
+    &:hover {
+      transform: translateY(110px);
+
+      @include onTablet {
+        transform: translateY(62px);
+      }
+
+      @include onDesktop {
+        transform: translateY(158px);
+      }
+    }
+  }
+
+  &__left {
+    display: none;
+  }
+}

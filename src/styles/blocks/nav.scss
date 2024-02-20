@@ -1,0 +1,76 @@
+.nav {
+  display: flex;
+  padding-top: 50px;
+  justify-content: center;
+
+  &__top {
+    display: none;
+
+    @include onDesktop {
+      display: flex;
+    }
+  }
+
+  &__list {
+    display: grid;
+    row-gap: 15px;
+    list-style: none;
+    font-size: 16px;
+    line-height: 150%; /* 24px */
+  }
+
+  &__list-top {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 40px;
+    list-style: none;
+
+    color: $second-gray;
+    font-family: Manrope, sans-serif;
+    font-size: 16px;
+    line-height: 150%; /* 24px */
+  }
+
+  &__link {
+    color: inherit;
+  }
+
+  &__link-top {
+    padding-inline: 10px;
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+      transform: scale(1.2);
+      padding: 10px;
+      background: linear-gradient(45deg, #03839e, #fff);
+      border-radius: 50%;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  &__basket {
+    position: relative;
+
+    &-circle {
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background-color: $red;
+      bottom: 12px;
+      left: 61px;
+     
+      &::after {
+        content: "0";
+        position: absolute;
+        top: 2px;
+        left: 5px;
+        font-family: Bebas Neue, sans-serif;
+        font-size: 9px;
+        line-height: normal;
+      }
+    }
+  }
+}

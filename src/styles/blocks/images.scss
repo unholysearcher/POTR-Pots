@@ -1,0 +1,14 @@
+.image {
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &--1-1 {
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.page {
+  background: $c-gray;
+  font-family: Bebas Neue, sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+
+  &__body {
+    overflow-x: hidden;
+    margin-inline: auto;
+    min-width: 320px;
+
+    @include onTablet {
+      min-width: 640px;
+      max-width: 768px;
+    }
+
+    @include onDesktop {
+      min-width: 1280px;
+      max-width: 1440px;
+    }
+  }
+
+  // &__menu {
+  //   position: fixed;
+  //   top: 0;
+  //   left: 0;
+  //   right: 0;
+
+  //   transition: all 0.3s;
+  //   opacity: 0;
+  //   transform: translateX(-100%);
+  //   pointer-events: none;
+
+  //   &:target {
+  //     opacity: 0;
+  //     transform: translateX(0);
+  //     pointer-events: all;
+  //   }
+  // }
+}

@@ -1,0 +1,109 @@
+.materials {
+  position: relative;
+  margin-bottom: 110px;
+  background-image: url(../images/materials-and-features/background-image-mobile.png);
+  background-position: top 130px center;
+  background-repeat: no-repeat;
+
+  @include onTablet {
+    height: 835px;
+    background-image: url(../images/materials-and-features/background-image-tablet.png);
+    background-position: top 258px center;
+
+  }
+
+  @include onDesktop {
+    height: 1242px;
+    margin-bottom: 107px;
+    background-image: url(../images/materials-and-features/background-image-desktop.png);
+    background-position: top 160px center;
+  }
+
+  &__content {
+    position: relative;
+  }
+
+  &__title {
+    color: $turquoise;
+    font-size: 58px;
+    letter-spacing: 9px;
+    padding-inline: 30px;
+    margin-bottom: 120px;
+    max-width: 320px;
+    margin-inline: auto;
+
+    @include onTablet {
+      max-width: none;
+      margin-bottom: 0;
+      padding-inline: 0;
+      font-size: 80px;
+      letter-spacing: 9.6px;
+    }
+
+    @include onDesktop {
+      font-size: 138.805px;
+      letter-spacing: 16.657px;
+    }
+  }
+
+  &__side {
+    display: none;
+    position: absolute;
+
+    @include onTablet {
+      display: block;
+
+      &--left {
+        top: 204px;
+        left: -17px;
+        transform-origin: left;
+        transform: rotate(90deg);
+      }
+  
+      &--right {
+        top: 144px;
+        right: -10px;
+        transform: rotate(90deg);
+        transform-origin: right;
+      }
+    }
+
+    @include onDesktop {
+      display: none;
+    }
+  }
+
+  &__info {
+    color: $second-gray;
+    font-family: Manrope, sans-serif;
+
+    @include onTablet {
+      position: absolute;
+      width: 340px;
+      bottom: -181px;
+      right: 0;
+    }
+
+    @include onDesktop {
+      top: 167px;
+      width: 470px;
+    }
+  }
+
+  &__info-title {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  &__info-text {
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  &__bold {
+    @include onTablet {
+      font-weight: 700;
+    }
+  }
+}

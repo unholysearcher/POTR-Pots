@@ -1,6 +1,6 @@
 <h1>The POTR POTS landing page</h1>
 
-Welcome to the website showcasing eco-friendly pots made from recycled plastic. 
+Welcome to the website showcasing eco-friendly pots made from recycled plastic.
 
 POTR Pots is an adaptive and mobile-first website with header navigation to all sections of the page, providing comprehensive information about the company and its products. To enhance user experience, all interactive elements feature hover effects, and the website includes animations for a dynamic feel. Additionally, the website features a slider showcasing product information, photographs of pots, packaging, and the team. There are also contact forms available for user convenience.
 
